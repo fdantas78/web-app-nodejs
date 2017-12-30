@@ -1,0 +1,34 @@
+{
+  "name": "web-app-nodejs",
+  "version": "0.0.1",
+  "description": "MEAN Stack development",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdantas78/web-app-nodejs.git"
+  },
+  "keywords": [
+    "mean_stack"
+  ],
+  "author": "Fernando Dantas <development@dantas.me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdantas78/web-app-nodejs/issues"
+  },
+  "homepage": "https://github.com/fdantas78/web-app-nodejs#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.3.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-nodemon": "^2.2.1",
+    "jshint": "^2.9.5",
+    "wiredep": "^4.0.0"
+  }
+}
