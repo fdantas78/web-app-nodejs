@@ -22,7 +22,9 @@
   "homepage": "https://github.com/fdantas78/web-app-nodejs#readme",
   "dependencies": {
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongodb": "^3.0.1",
+    "mongodb-core": "^3.0.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
