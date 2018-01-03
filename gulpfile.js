@@ -17,12 +17,12 @@ gulp.task('inject', function(){
     var wiredepOptions = {
         bowerJson: require('./bower.json'),
         directory: './bower_components',
-        ignorePath: '../../bower_components/'
+        ignorePath: '../../bower_components'
     };
     var injectOptions = {
         ignorePath: '/public/'
     };
-    return gulp.src('./src/views/*.html')
+    return gulp.src(['./src/views/*.html', './src/views/*.ejs'])
         .pipe(wiredep(wiredepOptions))
         .pipe(inject(injectSrc, injectOptions))
         .pipe(gulp.dest('./src/views'));

@@ -15,7 +15,7 @@
     <!--<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
     
     <!-- bower:css -->
-    <link rel='stylesheet' href='bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
     <!-- endbower -->
     
     <!-- inject:css -->
@@ -27,7 +27,7 @@
     <!--<link href="css/agency.min.css" rel="stylesheet">-->
     
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -61,21 +61,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <% for(let item of nav) { %>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="<%=item.link %>"><%=item.text %></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    <% } %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -658,6 +648,18 @@
         </div>
     </div>
 
+    <!-- bower:js -->
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbower -->
+    
+    <!-- inject:js -->
+    <script src="/js/agency.js"></script>
+    <script src="/js/agency.min.js"></script>
+    <script src="/js/contact_me.js"></script>
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <!-- endinject -->
+    
     <!-- jQuery -->
     <!--<script src="jquery/dist/jquery.min.js"></script>-->
 
@@ -673,18 +675,6 @@
 
     <!-- Theme JavaScript -->
     <!--<script src="js/agency.min.js"></script>-->
-    
-    <!-- bower:js -->
-    <script src="jquery/dist/jquery.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.js"></script>
-    <!-- endbower -->
-    
-    <!-- inject:js -->
-    <script src="/js/agency.js"></script>
-    <script src="/js/agency.min.js"></script>
-    <script src="/js/contact_me.js"></script>
-    <script src="/js/jqBootstrapValidation.js"></script>
-    <!-- endinject -->
 
 </body>
 
